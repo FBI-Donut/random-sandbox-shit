@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://block.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Camera.tscn" type="PackedScene" id=3]
+
+[node name="Node2D" type="Node2D"]
+scale = Vector2( 2, 2 )
+
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 94, 57 )
+
+[node name="Block" parent="." instance=ExtResource( 1 )]
+position = Vector2( 209.5, 76.5 )
+scale = Vector2( 3.66, 5.7 )
+
+[node name="Block2" parent="." instance=ExtResource( 1 )]
+position = Vector2( 318.5, 230 )
+scale = Vector2( 3.66, 5.7 )
+
+[node name="Camera2D" parent="." instance=ExtResource( 3 )]
+position = Vector2( 181, 146.5 )
